@@ -43,6 +43,12 @@
           $("#favorites_page").show();
         })
 
+        $(".navbar-brand").click(function(){
+          $(".jumbotron").hide();
+          $("#favorites_page").hide();
+          $("#gif_container").show();
+        })
+
         $(window).on("hashchange", function(event){
           showPage(location.hash);
         })
