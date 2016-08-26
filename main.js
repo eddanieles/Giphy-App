@@ -29,7 +29,10 @@
           favoritesArray.push(gifFavorite);
           console.log(localStorage);
           console.log(favoritesArray);
+          $(this).toggle();
         })
+
+
 
         $('#favorites_button').click(function(){
           $(".jumbotron").hide();
