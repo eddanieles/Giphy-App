@@ -12,10 +12,9 @@
                   console.log(data);
                   var random = Math.ceil(Math.random() * 100);
                   var randomGifURL = data.data[random].images.original.url;
-                  var gif = `<p class="gif"><img src="${randomGifURL}" alt="" /></p>`;
-                  $("#gif_container").prepend(gif);
-                  var searchText = `<p>Giphy <em>"${terms}"</em></p>`;
-                  $("#gif_container").prepend(searchText);
+                  var gifSection = `<p>Giphy <em>"${terms}"</em></p>
+                  <p class="gif"><img src="${randomGifURL}" alt="" /></p>`;
+                  $("#gif_container").prepend(gifSection);
                 }
             });
             return false;
