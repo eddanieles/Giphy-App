@@ -1,3 +1,7 @@
+body {
+  padding-top: 50px;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -15,11 +19,10 @@
 #gif_container {
   .terms {
     margin-top: 20px;
-    p {
-      position: relative;
-      .fa {
-        position: absolute;
-        right: 0;
+    .fa {
+      color: blue;
+      &:hover {
+        color: red;
       }
     }
   }
