@@ -5,6 +5,8 @@
     <title>Giphy Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://use.fontawesome.com/405f912d20.js"></script>
   </head>
   <body>
 
@@ -12,11 +14,15 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="http://ec2-50-19-249-57.compute-1.amazonaws.com/system/companies/158-logo-giphy_l.jpg?1400273381" alt="" style="width: 52px;"></a>
+          <a class="navbar-brand" href="#">Giphy</a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+             <li><a href="#">My Favorites</a></li>
+           </ul>
           <form id="gif_search" class="navbar-form navbar-left">
             <div class="form-group">
               <input id="search_terms" type="text" class="form-control" placeholder="Search">
@@ -27,7 +33,11 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-
+    <div class="jumbotron">
+      <h1>Welcome to Giphy</h1>
+      <p>Start be searching for any word or phase. Gifs will be returned based on what you search. Keep searching the same thing and to get different gifs</p>
+      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+    </div>
     <div class="container">
       <div id="gif_container">
 
