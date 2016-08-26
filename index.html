@@ -3,24 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Giphy Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
   <body>
-    <form id="gif_search">
-      <header>
-        <img src="http://ec2-50-19-249-57.compute-1.amazonaws.com/system/companies/158-logo-giphy_l.jpg?1400273381" alt="">
-        <input id="search_terms" size="32">
-        <button>Search!</button>
-      </header>
 
-    </form>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="http://ec2-50-19-249-57.compute-1.amazonaws.com/system/companies/158-logo-giphy_l.jpg?1400273381" alt="" style="width: 52px;"></a>
+        </div>
 
-    <div id="gif_container"></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form id="gif_search" class="navbar-form navbar-left">
+            <div class="form-group">
+              <input id="search_terms" type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-primary">Search!</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container">
+      <div id="gif_container">
+
+      </div>
+    </div>
 
     <footer>
 
     </footer>
 
   <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
