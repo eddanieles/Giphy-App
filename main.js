@@ -2,6 +2,18 @@
 
     $(document).ready(function(){
 
+      $.ajax({
+          url: "http://api.giphy.com/v1/gifs/search?q=gif&api_key=dc6zaTOxFJmzC&limit=100",
+          type: 'GET',
+          success: function(data) {
+            //console.log(data);
+            var random = Math.ceil(Math.random() * 100);
+            var randomGifURL = data.data[random].images.original.url;
+            var gifSection = `<p><img src="${randomGifURL}" alt="" /></p>`;
+            $("#home_container").html(gifSection);
+          }
+      });
+
         $('#gif_search').bind('submit', function() {
             $(".jumbotron").hide();
             $("#home_container").hide();
@@ -45,11 +57,17 @@
         })
 
         $(".navbar-brand").click(function(){
+          $("#favorites_page").html("");
           $(".jumbotron").hide();
           $("#favorites_page").hide();
           $("#home_container").hide();
           $("#gif_container").show();
         })
+
+        function showPage(pageID) {
+          $(".page").hide();
+          $(pageID).show();
+        }
 
         $(window).on("hashchange", function(event){
           showPage(location.hash);
