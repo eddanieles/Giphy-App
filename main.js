@@ -4,6 +4,7 @@
 
         $('#gif_search').bind('submit', function() {
             $(".jumbotron").hide();
+            $("#home_container").hide();
             terms = $('#search_terms').val();
             apiURL = "http://api.giphy.com/v1/gifs/search?q=" + terms + "&api_key=dc6zaTOxFJmzC&limit=100";
             $.ajax({
@@ -46,6 +47,7 @@
         $(".navbar-brand").click(function(){
           $(".jumbotron").hide();
           $("#favorites_page").hide();
+          $("#home_container").hide();
           $("#gif_container").show();
         })
 

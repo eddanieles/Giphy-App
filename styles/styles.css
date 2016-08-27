@@ -1,5 +1,6 @@
 body {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 70px; }
 
 .navbar {
   margin-bottom: 0; }
@@ -18,3 +19,11 @@ body {
     color: blue; }
     #gif_container .terms .fa:hover {
       color: red; }
+
+#home_container {
+  text-align: center; }
+  #home_container p img {
+    text-align: center; }
+
+.navbar-fixed-bottom {
+  color: gray; }

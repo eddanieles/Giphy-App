@@ -1,5 +1,6 @@
 body {
   padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .navbar {
@@ -26,4 +27,17 @@ body {
       }
     }
   }
+}
+
+#home_container {
+  text-align: center;
+  p {
+    img {
+      text-align: center;
+    }
+  }
+}
+
+.navbar-fixed-bottom {
+  color: gray;
 }
