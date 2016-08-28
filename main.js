@@ -10,7 +10,7 @@
             var random = Math.ceil(Math.random() * 100);
             var randomGifURL = data.data[random].images.original.url;
             var gifSection = `<p><img src="${randomGifURL}" alt="" /></p>`;
-            $("#home_container").html(gifSection);
+            $("#home_container").append(gifSection);
           }
       });
 
